@@ -13,7 +13,7 @@ body {
 /* Common css style */
 .container {
     max-width: 1200px;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     padding: 50px 20px;
 }
@@ -23,6 +23,9 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+}
+input[type="radio"], input[type="checkbox"] {
+    display: none;
 }
 
 /* Navbar-area style */
@@ -45,9 +48,7 @@ body {
     border: 1px solid #ffffff;
     border-radius: 30px;
 }
-input[type="radio"] {
-    display: none;
-}
+
 .nav-btn{
     transition: 0.3s;
     border-radius: 30px;
@@ -70,57 +71,21 @@ input[type="radio"] {
     padding: 15px 0;
 }
 
-/* Active state for checked radio button */
+
 input[type="radio"]:checked + .nav-btn {
     background-color: #E6533C;
     font-weight: 700;
 }
-/* .nav-btn {
-    display: inline-block;
-    transition: 0.3s;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.nav-btn input[type="radio"] {
+.hamburger{
     display: none;
-}
-
-.nav-btn a {
-    display: block;
-    padding: 15px 30px;
-    color: white;
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 16px;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.nav-btn:hover {
-    background-color: #ff5722;
+#hamburger-menu:checked + label .hamburger {
+    color: #E6533C;
+    transform: rotate3d(0, 0, 1, 180deg);
 }
-
-.nav-btn:has(input[type="radio"]:checked) {
-    background-color: #ff5722;
-}
-
-.nav-btn:has(input[type="radio"]:checked) a {
-    font-weight: 900;
-} */
-
-/* .nav{
-    border: 1px solid #ffffff;
-    border-radius: 30px;
-     padding: 15px;
-}
-.nav li {
-    list-style: none;
-}
-
-.nav li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: normal;
-   
-} */
+ 

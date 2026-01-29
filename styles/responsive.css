@@ -1,0 +1,60 @@
+/* Responsive disgn for Navbar mobile and tablet divices*/
+@media screen and (min-width:320px) and (max-width:768px){
+    .navbar{
+        position: relative;
+    }
+    .hamburger{
+        display: block;
+    }
+    .navbar a.navlink{
+        display: none;
+    }
+    .navbar a.navlink:hover{
+        padding: 10px 20px;
+        background-color: #E6533C;
+    }
+    #hamburger-menu:checked ~ a.navlink{
+        display: block;
+        padding: 10px 20px;
+        background-color: #333;
+        border-bottom: 1px solid #555;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 999;
+        animation: slideDown 0.3s ease-in-out;
+    }
+    
+    #hamburger-menu:checked ~ a.navlink:nth-of-type(2){
+        top: 60px;
+        border-radius: 30px 30px 0 0;
+    }
+    
+    #hamburger-menu:checked ~ a.navlink:nth-of-type(3){
+        top: 110px;
+    }
+    
+    #hamburger-menu:checked ~ a.navlink:nth-of-type(4){
+        top: 160px;
+    }
+    
+    #hamburger-menu:checked ~ a.navlink:nth-of-type(5){
+        top: 210px;
+        border-radius: 0 0 30px 30px;
+        border-bottom: none;
+    }
+    
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+    
